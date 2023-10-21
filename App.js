@@ -49,6 +49,27 @@ const container = React.createElement(
 )
 
 
+
+
+// components
+const HeaderComponent = () => {
+	//normal function which returns react element 
+	// return <h1>Heading</h1>;
+    //also can be written as 
+     (
+        <div><h1>This is a heading inside a div </h1></div>
+    );
+};
+
+//name of the component should be in caps e.g. Comp1 (it's a good practice and nothing more);
+
+//react element
+const heading3 = (
+    <h1>This is a heading </h1>
+);
+
+
 console.log(heading);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(container);   
+
