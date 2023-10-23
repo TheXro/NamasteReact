@@ -1,6 +1,5 @@
 import React from "react";
-import  ReactDOM  from "react-dom/client";
-
+import ReactDOM from "react-dom/client";
 
 /**
  HMR - Hot Module Reloading
@@ -20,56 +19,48 @@ import  ReactDOM  from "react-dom/client";
  transitive dependencies
  */
 
-const heading = React.createElement
-(
-    "h1",
-    {
-        id: "myHeading",
-        className: "myClass",
-        key: "skyey"
-    },
-    "Hello World"
+const heading = React.createElement(
+  "h1",
+  {
+    id: "myHeading",
+    className: "myClass",
+    key: "skyey",
+  },
+  "Hello World"
 );
 const heading2 = React.createElement(
-    "h1",
-    {
-        id: "my2Heading",
-        className: "myClass",
-        key: "myKey2"
-    },
-    "Hello 2nd World"
-)
+  "h1",
+  {
+    id: "my2Heading",
+    className: "myClass",
+    key: "myKey2",
+  },
+  "Hello 2nd World"
+);
 const container = React.createElement(
-    "div",
-    {
-        id: "container",
-        className: "container"
-    },
-    [heading, heading2]
-)
-
-
-
+  "div",
+  {
+    id: "container",
+    className: "container",
+  },
+  [heading, heading2]
+);
 
 // components
 const HeaderComponent = () => {
-	//normal function which returns react element 
-	// return <h1>Heading</h1>;
-    //also can be written as 
-     (
-        <div><h1>This is a heading inside a div </h1></div>
-    );
+  //normal function which returns react element
+  // return <h1>Heading</h1>;
+  //also can be written as
+  <div>
+    <h1>This is a heading inside a div </h1>
+  </div>;
 };
 
 //name of the component should be in caps e.g. Comp1 (it's a good practice and nothing more);
 
 //react element
-const heading3 = (
-    <h1>This is a heading </h1>
-);
-
+const heading3 = <h1>This is a heading </h1>;
 
 console.log(heading);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);   
-
+root.render(container);
